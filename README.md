@@ -11,7 +11,7 @@ It provides search and navigation capabilities.
 
 Also saves information about registered users and their actions in the database.
 
-With minimal modifications, it will ensure the provision of any type of files along their paths (of any nesting level) specified in the database.
+With minimal modifications, it will ensure the provision of any type/kind of files along their paths (of any nesting level) specified in the database.
 The internal cache is made due to the limitations of the telegram API and is an example of how, without relying on the telegram API, to save and be able to access the session data of the current user.
 
 Set in src/main/resources/application.yaml
