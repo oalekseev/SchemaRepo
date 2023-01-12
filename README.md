@@ -1,15 +1,13 @@
 # SchemaRepo
 Telegram Bot written in Java.
 
-This is a bot guide to service manuals and equipment diagrams.
+This is a bot guide to service manuals and equipment diagrams. It provides search and navigation capabilities and files downloading.
 
 It uses postgres database to store all entities like sections, brands and models.
 
 Service manuals and equipment diagrams files are stored in file system and their paths saves in DB.
 
-It provides search and navigation capabilities.
-
-Also saves information about registered users and their actions in the database.
+Also saves information about registered users and their actions (downloadings and leave wishes) in the database.
 
 With minimal modifications, it will ensure the provision of any type/kind of files along their paths (of any nesting level) specified in the database.
 
