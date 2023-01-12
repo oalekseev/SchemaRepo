@@ -3,7 +3,7 @@ Telegram Bot written in Java.
 
 This is a bot guide to service manuals and equipment diagrams. It provides search and navigation capabilities and files downloading.
 
-It uses postgres database to store all entities like sections, brands and models.
+It uses Postgres database to store all entities like sections, brands and models.
 
 Service manuals and equipment diagrams files are stored in file system and their paths saves in DB.
 
