@@ -1,0 +1,177 @@
+CREATE TABLE users (
+   	id int GENERATED ALWAYS AS IDENTITY,
+   	chat_id int8 NOT NULL,
+   	user_name varchar,
+	first_name varchar,
+	last_name varchar,
+	v_card varchar,
+	phone_number varchar,
+	created_time timestamptz,
+	registered_time timestamptz,
+	status varchar NOT NULL,
+   	PRIMARY KEY(id)
+);
+
+CREATE TABLE audit (
+   	id int GENERATED ALWAYS AS IDENTITY,
+   	user_id int,
+	time timestamptz,
+	FOREIGN KEY(user_id) REFERENCES users(id),
+   	action varchar,
+   	PRIMARY KEY(id)
+);
+
+CREATE TABLE feedback (
+   	id int GENERATED ALWAYS AS IDENTITY,
+   	user_id int,
+	time timestamptz,
+	FOREIGN KEY(user_id) REFERENCES users(id),
+   	message varchar,
+   	PRIMARY KEY(id)
+);
+
+CREATE TABLE types (
+   id int GENERATED ALWAYS AS IDENTITY,
+   name varchar NOT NULL,
+   display_name varchar NOT NULL,
+   PRIMARY KEY(id)
+);
+
+CREATE TABLE brands (
+   id int GENERATED ALWAYS AS IDENTITY,
+   name varchar NOT NULL,
+   display_name varchar NOT NULL,
+   PRIMARY KEY(id)
+);
+
+CREATE TABLE manuals (
+	id int GENERATED ALWAYS AS IDENTITY,
+	type_id int NOT NULL,
+	brand_id int NOT NULL,
+	model_name varchar NOT NULL,
+	filepath varchar NOT NULL,
+	PRIMARY KEY(id, type_id, brand_id),
+	FOREIGN KEY(type_id) REFERENCES types(id),
+	FOREIGN KEY(brand_id) REFERENCES brands(id)
+)
+PARTITION BY LIST(type_id);
+
+CREATE TABLE manuals_phone
+PARTITION OF manuals
+FOR VALUES IN (1)
+PARTITION BY LIST(brand_id)
+;
+
+CREATE TABLE manuals_tv
+PARTITION OF manuals
+FOR VALUES IN (2)
+PARTITION BY LIST(brand_id)
+;
+
+CREATE TABLE manuals_tablet
+PARTITION OF manuals
+FOR VALUES IN (3)
+PARTITION BY LIST(brand_id)
+;
+
+CREATE TABLE manuals_watch
+PARTITION OF manuals
+FOR VALUES IN (4)
+PARTITION BY LIST(brand_id)
+;
+
+
+
+CREATE TABLE manuals_phone_sumsung
+PARTITION OF manuals_phone
+FOR VALUES IN (1)
+;
+
+CREATE TABLE manuals_phone_xiaomi
+PARTITION OF manuals_phone
+FOR VALUES IN (2)
+;
+
+CREATE TABLE manuals_phone_apple
+PARTITION OF manuals_phone
+FOR VALUES IN (3)
+;
+
+CREATE TABLE manuals_phone_huawei
+PARTITION OF manuals_phone
+FOR VALUES IN (4)
+;
+
+CREATE TABLE manuals_phone_lg
+PARTITION OF manuals_phone
+FOR VALUES IN (5)
+;
+
+CREATE TABLE manuals_phone_sony
+PARTITION OF manuals_phone
+FOR VALUES IN (6)
+;
+
+
+
+CREATE TABLE manuals_tv_sumsung
+PARTITION OF manuals_tv
+FOR VALUES IN (1)
+;
+
+CREATE TABLE manuals_tv_xiaomi
+PARTITION OF manuals_tv
+FOR VALUES IN (2)
+;
+
+CREATE TABLE manuals_tv_apple
+PARTITION OF manuals_tv
+FOR VALUES IN (3)
+;
+
+CREATE TABLE manuals_tv_huawei
+PARTITION OF manuals_tv
+FOR VALUES IN (4)
+;
+
+CREATE TABLE manuals_tv_lg
+PARTITION OF manuals_tv
+FOR VALUES IN (5)
+;
+
+CREATE TABLE manuals_tv_sony
+PARTITION OF manuals_tv
+FOR VALUES IN (6)
+;
+
+
+
+CREATE TABLE manuals_tablet_samsung
+PARTITION OF manuals_tablet
+FOR VALUES IN (1)
+;                               
+
+CREATE TABLE manuals_tablet_xiaomi
+PARTITION OF manuals_tablet
+FOR VALUES IN (2)
+;
+
+CREATE TABLE manuals_tablet_apple
+PARTITION OF manuals_tablet
+FOR VALUES IN (3)
+;
+
+CREATE TABLE manuals_tablet_huawei
+PARTITION OF manuals_tablet
+FOR VALUES IN (4)
+;
+
+CREATE TABLE manuals_tablet_lg
+PARTITION OF manuals_tablet
+FOR VALUES IN (5)
+;
+								
+CREATE TABLE manuals_tablet_sony
+PARTITION OF manuals_tablet
+FOR VALUES IN (6)
+;

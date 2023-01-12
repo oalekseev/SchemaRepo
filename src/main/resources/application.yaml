@@ -1,0 +1,23 @@
+bot:
+  name: SchemaRepo
+  token: <production token>
+
+#  name: SchemaRepoTest
+#  token: <test token>
+
+  adminChatIds: <admin chat ids>
+  recordsOnPage: 10
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_schemarepo
+    driver-class-name: org.postgresql.Driver
+    username: schemarepo
+    password: schemarepo
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      mode: never

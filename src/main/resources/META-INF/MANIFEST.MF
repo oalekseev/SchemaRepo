@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Main-Class: com.schemarepository.SchemaRepoApp
+Class-Path: log4j-to-slf4j-2.17.2.jar snakeyaml-1.30.jar spring-data-jpa
+ -2.7.2.jar jakarta.validation-api-2.0.2.jar spring-orm-5.3.22.jar jakar
+ ta.xml.bind-api-2.3.3.jar grizzly-http-2.4.4.jar javassist-3.25.0-GA.ja
+ r osgi-resource-locator-1.0.3.jar spring-boot-starter-jdbc-2.7.2.jar by
+ te-buddy-1.12.9.jar commons-lang3-3.12.0.jar telegrambots-meta-6.1.0.ja
+ r checker-qual-3.12.0.jar j2objc-annotations-1.3.jar listenablefuture-9
+ 999.0-empty-to-avoid-conflict-with-guava.jar hk2-utils-2.6.1.jar jakart
+ a.ws.rs-api-2.1.6.jar json-20220320.jar jandex-2.4.2.Final.jar txw2-2.3
+ .1.jar spring-data-commons-2.7.2.jar slf4j-api-1.7.36.jar guava-31.1-jr
+ e.jar FastInfoset-1.2.15.jar spring-boot-2.7.0.jar spring-tx-5.3.22.jar
+  jackson-annotations-2.13.2.jar jakarta.transaction-api-1.3.3.jar jacks
+ on-jaxrs-base-2.13.2.jar jackson-module-jaxb-annotations-2.13.2.jar gri
+ zzly-framework-2.4.4.jar spring-expression-5.3.20.jar commons-codec-1.1
+ 1.jar spring-boot-starter-aop-2.7.2.jar aopalliance-repackaged-2.6.1.ja
+ r logback-core-1.2.11.jar hk2-api-2.6.1.jar telegrambots-6.1.0.jar aspe
+ ctjweaver-1.9.7.jar spring-boot-autoconfigure-2.7.0.jar commons-logging
+ -1.2.jar jersey-media-json-jackson-2.35.jar spring-boot-starter-2.7.2.j
+ ar spring-aop-5.3.22.jar classmate-1.5.1.jar spring-jdbc-5.3.22.jar hk2
+ -locator-2.6.1.jar jul-to-slf4j-1.7.36.jar grizzly-http-server-2.4.4.ja
+ r hibernate-core-5.6.10.Final.jar spring-core-5.3.20.jar stax-ex-1.8.ja
+ r spring-aspects-5.3.22.jar jersey-entity-filtering-2.35.jar jackson-da
+ tabind-2.13.2.2.jar spring-jcl-5.3.20.jar logback-classic-1.2.11.jar Hi
+ kariCP-4.0.3.jar spring-beans-5.3.22.jar httpclient-4.5.13.jar failurea
+ ccess-1.0.1.jar jersey-container-grizzly2-http-2.35.jar jaxb-runtime-2.
+ 3.1.jar postgresql-42.2.14.jar commons-io-2.11.0.jar antlr-2.7.7.jar er
+ ror_prone_annotations-2.11.0.jar telegrambots-spring-boot-starter-6.1.0
+ .jar jakarta.persistence-api-2.2.3.jar spring-context-5.3.20.jar istack
+ -commons-runtime-3.0.7.jar jackson-jaxrs-json-provider-2.13.2.jar jerse
+ y-common-2.35.jar jakarta.inject-2.6.1.jar spring-boot-starter-logging-
+ 2.7.2.jar jersey-hk2-2.35.jar httpmime-4.5.13.jar spring-boot-starter-d
+ ata-jpa-2.7.2.jar jsr305-3.0.2.jar jersey-server-2.35.jar jakarta.annot
+ ation-api-1.3.5.jar hibernate-commons-annotations-5.1.2.Final.jar jboss
+ -logging-3.4.3.Final.jar httpcore-4.4.13.jar log4j-api-2.17.2.jar jacks
+ on-core-2.13.2.jar jersey-client-2.35.jar
+
