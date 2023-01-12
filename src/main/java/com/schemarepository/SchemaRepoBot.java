@@ -112,7 +112,7 @@ public class SchemaRepoBot extends TelegramLongPollingBot {
 
                         execute(SendMessage.builder()
                                 .chatId(message.getChatId())
-                                .text("Greetings, I am a bot guide to service manuals and equipment diagrams since 2019.)
+                                .text("Greetings, I am a bot guide to service manuals and equipment diagrams since 2019.")
                                 .build());
 
                         messageForUser = execute(SendMessage.builder()
