@@ -18,4 +18,4 @@ The internal cache is made due to the limitations of the telegram API and is an 
 Set in src/main/resources/application.yaml
 your Bot token and comma separated admin chatIds (to recieve messages about new registrations and user actions).
 
-Example is here @SchemaRepoBot (use Telegram to search)
+Example is here @SchemaRepoBot (use Telegram to search bot)
