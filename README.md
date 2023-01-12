@@ -5,6 +5,8 @@ This is a bot guide to service manuals and equipment diagrams.
 
 It uses postgres database to store all entities like sections, brands and models.
 
+service manuals and equipment diagrams files are stored in file system and their paths saves in DB.
+
 It provides search and navigation capabilities.
 
 Also saves information about registered users and their actions in the database.
