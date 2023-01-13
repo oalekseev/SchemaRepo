@@ -1,11 +1,11 @@
 bot:
   name: SchemaRepo
-  token: <production token>
+  token: <production_token>
 
 #  name: SchemaRepoTest
-#  token: <test token>
-
-  adminChatIds: <admin chat ids>
+#  token: <test_token>
+    
+  adminChatIds: <admin_chat_ids> #comma separated
   recordsOnPage: 10
 spring:
   datasource:
