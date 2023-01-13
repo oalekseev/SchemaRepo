@@ -288,7 +288,7 @@ public class SchemaRepoBot extends TelegramLongPollingBot {
                         .text("Only registered users can download files")
                         .build());
 
-//                auditRepository.save(new AuditRecord(Calendar.getInstance(), "File downloaded " + filePath, user.get()));
+//                auditRepository.save(new AuditRecord(Calendar.getInstance(), "File downloading attempt " + filePath, user.get()));
             }
         } else {
             String text;
