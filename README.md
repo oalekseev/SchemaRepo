@@ -1,5 +1,5 @@
 # SchemaRepo
-Telegram Bot written in Java. (August 2022).
+Telegram Bot written in Java (august 2022).
 
 This is a bot guide to service manuals and equipment diagrams. It provides files downloading, search and navigation capabilities.
 
