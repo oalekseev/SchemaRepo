@@ -1,6 +1,6 @@
 bot:
   name: SchemaRepo
-  token: <token> #Bot token
+  token: <bot_token>
   adminChatIds: <admin_chat_ids> #comma separated
   recordsOnPage: 10
 spring:
