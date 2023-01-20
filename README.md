@@ -7,7 +7,7 @@ It uses Postgres database to store all entities like sections, brands and models
 
 Service manuals and equipment diagrams files are stored in file system and their paths saves in DB.
 
-Also saves information about users and their actions (visits, registrations, downloadings and leave wishes) in the database.
+Also saves information about users and their actions (visits, registrations, downloadings and wishes left) in the database.
 
 With minimal modifications, it will ensure the provision of any type/kind of files along their paths (of any nesting level) specified in the database.
 
